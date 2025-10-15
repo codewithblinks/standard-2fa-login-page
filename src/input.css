@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet');
+@import "tailwindcss";
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #F6F9F9;
+}
+
+@theme {
+    --font-display: "Geist", "Geist Placeholder", sans-serif;
+    --breakpoint-sm: 30rem;
+    --breakpoint-md: 68rem;
+    --breakpoint-lg: 75rem;
+}
+
+/*shake animation */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-6px); }
+    40%, 80% { transform: translateX(6px); }
+  }
+  .shake {
+    animation: shake 0.4s ease-in-out;
+  }

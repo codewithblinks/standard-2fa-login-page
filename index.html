@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="font-display subpixel-antialiased">
+    <!-- main -->
+    <div class="h-screen w-screen flex flex-col gap-30 items-center justify-center">
+        <div>
+            <div
+                class="flex flex-col md:flex-row text-start items-center justify-center w-[500px] h-[600px] md:w-[1000px] md:h-[650px] lg:w-[1100px] lg:h-[650px] bg-[#FCF8F5] relative shadow-xl/8">
+
+                <!--section one -->
+                <div
+                    class="w-full h-full md:max-w-[420px] flex items-center md:items-start pt-25 pb-10 md:pt-40 justify-center relative">
+                    <div class="max-w-[380px]">
+                        <!--logo -->
+                        <div class="w-30 md:w-40 flex shrink-0 absolute top-12 left-2 md:top-15 md:left-7">
+                            <img src="src/images/logo.png" alt="" class="h-full w-full object-center object-contain">
+                        </div>
+                        <!--$ -->
+                        <div class="flex flex-col gap-5 tracking-tight">
+                            <div>
+                                <h2 class="text-sm font-light tracking-normal">Your safety is our top priority</h2>
+                            </div>
+                            <div>
+                                <h5 class="text-3xl tracking-tight font-normal">Verify your number</h5>
+                            </div>
+                            <div>
+                                <p
+                                    class="text-sm font-light tracking-tight text-left md:max-w-[320px] flex flex-col gap-1">
+                                    We've sent a verification code to the number
+                                    ending in 2229. Not the right number?
+                                    <span class="underline cursor-pointer">Change number</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- section two -->
+                <form action=""
+                    class="w-full border h-full flex flex-col gap-15 items-start justify-between bg-white border-none sm:rounded-t-2xl md:rounded-tr-[0px] md:rounded-tl-[50px] sm:pt-12 md:pt-51 pb-8">
+                    <div class="space-y-5 flex flex-col md:justify-start items-start pl-15 md:pl-28">
+
+                        <!-- $1 -->
+                        <div>
+                            <h2 class="text-base font-normal">Enter 2FA Code</h2>
+                            <small class="text-xs font-light tracking-tight text-[#e7d6c8]">Default Code: 253633</small>
+                        </div>
+                        <!-- $2 -->
+                        <div class="flex justify-start items-center gap-2 md:gap-4 mt-1">
+                            <!-- otp input box -->
+                            <input type="text"
+                                class="otp-input text-center w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 border-2 text-2xl border-gray-200 rounded-lg focus:outline-none focus:border-blue-500">
+                            <input type="text"
+                                class="otp-input text-center w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 border-2 text-2xl border-gray-200 rounded-lg focus:outline-none focus:border-blue-500">
+                            <input type="text"
+                                class="otp-input text-center w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 border-2 text-2xl border-gray-200 rounded-lg focus:outline-none focus:border-blue-500">
+                            <!-- divider -->
+                            <!-- <div class="bg-gray-300 h-[2px] w-3 md:w-5">
+                        </div> -->
+                            <input type="text"
+                                class="otp-input text-center w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 border-2 text-2xl border-gray-200 rounded-lg focus:outline-none focus:border-blue-500">
+                            <input type="text"
+                                class="otp-input text-center w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 border-2 text-2xl border-gray-200 rounded-lg focus:outline-none focus:border-blue-500">
+                            <input type="text"
+                                class="otp-input text-center w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 border-2 text-2xl border-gray-200 rounded-lg focus:outline-none focus:border-blue-500">
+                        </div>
+                        <!-- $3 -->
+                        <div>
+                            <p class="text-sm font-light tracking-tight text-left md:max-w-[320px] flex flex-col gap-1">
+                                This
+                                code will expire in 10 minutes. Need a new code? <span>
+                                    <span class="underline cursor-pointer">Resend code</span> or
+                                    <span class="underline cursor-pointer">Change delivery method</span>
+                                </span>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col w-full gap-8">
+                        <div class="bg-[rgb(239,239,239)] h-[1px] w-full overflow-hidden">
+
+                        </div>
+                        <!-- verify button -->
+                        <div class="w-full flex items-center justify-end pr-12">
+                            <div
+                                class="bg-[#333333] flex items-center py-4.5 justify-center rounded-lg cursor-pointer transition-all duration-800 ease-in-out hover:bg-[#454545] w-30 h-8 text-center">
+                                <button class="text-white text-sm font-normal text-center cursor-pointer"
+                                    id="verify-btn" type="submit">Verify</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="flex items-center justify-end w-[500px] md:w-[1000px] lg:w-[1100px] absolute bottom-8">
+            <p class="text-[#f4d4be] text-sm font-light tracking-[0.03]"><span class="text-[rgb(144,144,144)]">Made
+                    by</span><a href="https://x.com/cipherblinks"> CIPHER BLINKS</a></p>
+        </div>
+
+    </div>
+    <!-- js internal script -->
+    <script>
+        const inputs = document.querySelectorAll(".otp-input");
+        const verifyBtn = document.getElementById("verify-btn");
+        const correctCode = "253633"; // ✅ the correct OTP value
+
+        // auto move focus
+        inputs.forEach((input, index) => {
+            input.addEventListener("input", (e) => {
+                if (e.target.value && index < inputs.length - 1) {
+                    inputs[index + 1].focus();
+                }
+            });
+
+            input.addEventListener("keydown", (e) => {
+                if (e.key === "Backspace" && !input.value && index > 0) {
+                    inputs[index - 1].focus();
+                }
+            });
+        });
+
+        // verify OTP
+        verifyBtn.addEventListener("click", () => {
+            const enteredCode = Array.from(inputs).map(input => input.value).join("");
+
+            if (enteredCode === correctCode) {
+                // success
+                inputs.forEach(i => {
+                    i.classList.remove("border-red-500");
+                    i.classList.add("border-green-500");
+                });
+            } else {
+                // fail: show red + shake
+                inputs.forEach(i => {
+                    i.classList.remove("border-green-500");
+                    i.classList.add("border-red-500", "shake");
+                });
+
+                // remove shake after animation
+                setTimeout(() => {
+                    inputs.forEach(i => i.classList.remove("shake"));
+                }, 600);
+            }
+        });
+    </script>
+</body>
+
+</html>
