@@ -9,15 +9,15 @@
 
 <body class="font-display subpixel-antialiased">
     <!-- main -->
-    <div class="h-screen w-screen flex flex-col gap-30 items-center justify-center">
+    <div class="h-screen w-screen flex flex-col md:gap-30 items-center justify-center">
         <div>
             <div
-                class="flex flex-col md:flex-row text-start items-center justify-center w-[500px] h-[600px] md:w-[1000px] md:h-[650px] lg:w-[1100px] lg:h-[650px] bg-[#FCF8F5] relative shadow-xl/8">
+                class="flex flex-col md:flex-row text-start items-center justify-center w-[400px] h-[600px] md:w-[1000px] md:h-[650px] lg:w-[1100px] lg:h-[650px] bg-[#FCF8F5] relative shadow-xl/8">
 
                 <!--section one -->
                 <div
                     class="w-full h-full md:max-w-[420px] flex items-center md:items-start pt-25 pb-10 md:pt-40 justify-center relative">
-                    <div class="max-w-[380px]">
+                    <div class="max-w-[380px] pl-6 md:pl-28">
                         <!--logo -->
                         <div class="w-30 md:w-40 flex shrink-0 absolute top-12 left-2 md:top-15 md:left-7">
                             <img src="src/images/logo.png" alt="" class="h-full w-full object-center object-contain">
@@ -43,8 +43,8 @@
                 </div>
                 <!-- section two -->
                 <form action=""
-                    class="w-full border h-full flex flex-col gap-15 items-start justify-between bg-white border-none sm:rounded-t-2xl md:rounded-tr-[0px] md:rounded-tl-[50px] sm:pt-12 md:pt-51 pb-8">
-                    <div class="space-y-5 flex flex-col md:justify-start items-start pl-15 md:pl-28">
+                    class="w-full border h-full flex flex-col gap-8 md:gap-15 items-start justify-between bg-white border-none sm:rounded-t-2xl md:rounded-tr-[0px] md:rounded-tl-[50px] pt-8 md:pt-51 pb-8">
+                    <div class="space-y-2 md:space-y-5 flex flex-col md:justify-start items-start pl-6 md:pl-28">
 
                         <!-- $1 -->
                         <div>
@@ -82,7 +82,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="flex flex-col w-full gap-8">
+                    <div class="flex flex-col w-full gap-5 md:gap-8 relative">
                         <div class="bg-[rgb(239,239,239)] h-[1px] w-full overflow-hidden">
 
                         </div>
@@ -94,14 +94,23 @@
                                     id="verify-btn" type="submit">Verify</button>
                             </div>
                         </div>
+                        <!-- socials link -->
+                        <div
+                            class="flex items-center md:justify-end pl-5 md:pr-5 top-15 md:top-20 absolute w-full overflow-hidden">
+                            <p class="text-[#f4d4be] text-xs md:text-sm font-light tracking-[0.03]"><span
+                                    class="text-[rgb(144,144,144)]">Made
+                                    by</span><a href="https://x.com/cipherblinks"> CIPHER BLINKS</a></p>
+                        </div>
                     </div>
                 </form>
             </div>
         </div>
-        <div class="flex items-center justify-end w-[500px] md:w-[1000px] lg:w-[1100px] absolute bottom-8">
-            <p class="text-[#f4d4be] text-sm font-light tracking-[0.03]"><span class="text-[rgb(144,144,144)]">Made
+        <!-- <div
+            class="flex items-center justify-end w-[300px] md:w-[1000px] lg:w-[1100px] absolute bottom-14 left-16 md:left-2 md:bottom-8">
+            <p class="text-[#f4d4be] text-xs md:text-sm font-light tracking-[0.03]"><span
+                    class="text-[rgb(144,144,144)]">Made
                     by</span><a href="https://x.com/cipherblinks"> CIPHER BLINKS</a></p>
-        </div>
+        </div> -->
 
     </div>
     <!-- js internal script -->
